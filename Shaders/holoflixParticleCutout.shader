@@ -111,7 +111,7 @@ Shader "Holoflix/ParticleCutout"
 				
 				float2 scaleUV = float2(unity_WorldToObject[0][0], unity_WorldToObject[1][1]) * _ParticleSize * _Dims.xy * _ParticleUV;
 				
-				float4x4 vp = UnityObjectToClipPos(unity_WorldToObject);
+				float4x4 vp = mul(UNITY_MATRIX_VP, unity_WorldToObject);
 				FS_INPUT pIn;
 				pIn.vertex = mul(vp, v[0]);
 				pIn.uv0 = p[0].uv0 + scaleUV * float2(-1, 1);

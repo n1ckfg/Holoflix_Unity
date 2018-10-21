@@ -1,5 +1,7 @@
+// https://issuetracker.unity3d.com/issues/upgrade-note-replaced-mul-unity-matrix-mvp-star-with-unityobjecttoclippos-star-faulty-replacement-breaking-shader
+// https://cmwdexint.com/2017/05/06/unityobjecttoclipposuse-float4-instead-of-float3/
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 // Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 // Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
 
@@ -113,7 +115,7 @@ Shader "Holoflix/ParticleAdditive"
 				
 				float2 scaleUV = float2(unity_WorldToObject[0][0], unity_WorldToObject[1][1]) * _ParticleSize * _Dims.xy * _ParticleUV;
 				
-				float4x4 vp = UnityObjectToClipPos(unity_WorldToObject);
+				float4x4 vp = mul(UNITY_MATRIX_VP, unity_WorldToObject);
 				FS_INPUT pIn;
 				pIn.vertex = mul(vp, v[0]);
 				pIn.uv0 = p[0].uv0 + scaleUV * float2(-1, 1);
