@@ -10,7 +10,7 @@ using System.Collections.Generic;
 //creates a sufficiently dense mesh for the displacement
 
 [ExecuteInEditMode]
-public class holoflixMeshDemo : MonoBehaviour {
+public class holoflixMeshOrig : MonoBehaviour {
 
 	public int meshResX = 200;
 	public int meshResY = 200;

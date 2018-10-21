@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23000012918230038}
   - component: {fileID: 114857442616819430}
   - component: {fileID: 328307751175321718}
-  - component: {fileID: 114533131549904380}
+  - component: {fileID: 114503782306688424}
   m_Layer: 0
   m_Name: Holoflix
   m_TagString: Untagged
@@ -37,9 +37,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013925846234}
-  m_LocalRotation: {x: -0, y: 0.04322132, z: -0, w: 0.9990656}
-  m_LocalPosition: {x: 0.28, y: 0.25, z: -0.16000018}
-  m_LocalScale: {x: 0.35029984, y: 0.63784546, z: 0.5096887}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalScale: {x: 1.667, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -86,7 +86,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013925846234}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114533131549904380
+--- !u!114 &114503782306688424
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,8 +100,9 @@ MonoBehaviour:
   meshResX: 53
   meshResY: 200
   imageRes: {x: 1, y: 1}
-  rgbCoord: {x: 0, y: 0}
-  rgbDim: {x: 1, y: 1}
+  rgbCoord: {x: 0.5, y: 0.165}
+  rgbDim: {x: 0.5, y: 0.667}
+  depthMovieMaterial: {fileID: 2100000, guid: 32646e242a3ee40f59f8212644bf8e9e, type: 2}
   depth: 1
   persp: 1
   size: 1
@@ -124,7 +125,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013925846234}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 792acabfc417b47428e636412ab47b17, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: ff8acd5a64b3344ad9e3e7deab1d5f3e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}

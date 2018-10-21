@@ -1237,68 +1237,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1432678290
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1432678292}
-  - component: {fileID: 1432678291}
-  m_Layer: 0
-  m_Name: Video Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!328 &1432678291
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1432678290}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 0}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 2020406525}
-  m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 3
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: file:///Users/nick/GitHub/holoflix_testing/Assets/StreamingAssets/Comp 1.mp4
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 1
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
---- !u!4 &1432678292
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1432678290}
-  m_LocalRotation: {x: -0, y: -0.3570918, z: -0, w: 0.9340693}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: -41.843002, z: 0}
 --- !u!1 &1525330416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,11 +2044,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!23 &2020406525 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 23000012918230038, guid: 87a129dcce1f94ef9b1033209a0a764b,
-    type: 2}
-  m_PrefabInternal: {fileID: 2078386372}
 --- !u!1 &2060142404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,7 +2122,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000012006072662, guid: 87a129dcce1f94ef9b1033209a0a764b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.04
+      value: -1.74
       objectReference: {fileID: 0}
     - target: {fileID: 4000012006072662, guid: 87a129dcce1f94ef9b1033209a0a764b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2197,7 +2130,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012006072662, guid: 87a129dcce1f94ef9b1033209a0a764b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.61
+      value: 4.49
       objectReference: {fileID: 0}
     - target: {fileID: 4000012006072662, guid: 87a129dcce1f94ef9b1033209a0a764b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2234,6 +2167,17 @@ Prefab:
       propertyPath: sizeSlider
       value: 
       objectReference: {fileID: 623770255}
+    - target: {fileID: 328309449191368850, guid: 87a129dcce1f94ef9b1033209a0a764b,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 328309449191368850, guid: 87a129dcce1f94ef9b1033209a0a764b,
+        type: 2}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: ff8acd5a64b3344ad9e3e7deab1d5f3e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87a129dcce1f94ef9b1033209a0a764b, type: 2}
   m_IsPrefabAsset: 0

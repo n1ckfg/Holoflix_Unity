@@ -12,14 +12,14 @@ using System.Collections.Generic;
 [ExecuteInEditMode]
 public class HoloflixMesh : MonoBehaviour {
 
-	public int meshResX = 200;
+	public int meshResX = 53;
 	public int meshResY = 200;
 	[Tooltip ("The resolution of the entire movie texture.")]
-	public Vector2 imageRes;
+	public Vector2 imageRes = new Vector2(1f, 1f);
 	[Tooltip ("The upper left pixel x/y of the color portion of the movie.")]
-	public Vector2 rgbCoord;
+	public Vector2 rgbCoord = new Vector2(0.5f, 0.165f);
 	[Tooltip ("The pixel width/height of the color portion of the movie.")]
-	public Vector2 rgbDim;
+	public Vector2 rgbDim = new Vector2(0.5f, 0.667f);
 
 	[HideInInspector] public Material depthMovieMaterial;
 
@@ -242,11 +242,10 @@ public class HoloflixMesh : MonoBehaviour {
 		
 		if (meshResX != _currentResX || meshResY != _currentResY) updateSettings ();
 
-
-		if (imageRes.x < 1) imageRes.x = 1;
-		if (imageRes.y < 1) imageRes.y = 1;
-		if (rgbDim.x < 1) rgbDim.x = 1;
-		if (rgbDim.y < 1) rgbDim.y = 1;
+		//if (imageRes.x < 1) imageRes.x = 1;
+		//if (imageRes.y < 1) imageRes.y = 1;
+		//if (rgbDim.x < 1) rgbDim.x = 1;
+		//if (rgbDim.y < 1) rgbDim.y = 1;
 
 		//David Lycan - Update the dimensions in the movie's material if necessary
 		Vector4 newDims = new Vector4( 1.07333f * rgbDim.y / imageRes.x, 1.09f * rgbDim.y / imageRes.y, 1f, 1f);
