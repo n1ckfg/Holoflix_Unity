@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000013925846234}
+  m_IsPrefabAsset: 1
+--- !u!1 &1000013925846234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4000012006072662}
+  - component: {fileID: 33000011220007012}
+  - component: {fileID: 23000012918230038}
+  - component: {fileID: 114000011054508414}
+  - component: {fileID: 114857442616819430}
+  m_Layer: 0
+  m_Name: HoloflixDemo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000012006072662
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013925846234}
+  m_LocalRotation: {x: -0, y: -0.056696426, z: -0, w: 0.9983915}
+  m_LocalPosition: {x: -1.04, y: 5.93, z: -1.61}
+  m_LocalScale: {x: 3.6255634, y: 3.6255634, z: 3.6255634}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -6.32, z: 0}
+--- !u!23 &23000012918230038
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013925846234}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 32646e242a3ee40f59f8212644bf8e9e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33000011220007012
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013925846234}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114000011054508414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013925846234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b00764f39c874b3bbba2219946633aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshResX: 53
+  meshResY: 200
+  imageRes: {x: 1, y: 1}
+  rgbCoord: {x: 0.5, y: 0}
+  rgbDim: {x: 1, y: 1}
+  depthMovieMaterial: {fileID: 2100000, guid: 32646e242a3ee40f59f8212644bf8e9e, type: 2}
+  depthSlider: {fileID: 0}
+  perspSlider: {fileID: 0}
+  sizeSlider: {fileID: 0}
+  holovidShader: {fileID: 4800000, guid: 2081742e7930c41889e349f4dbc3ffbf, type: 3}
+  particleShader: {fileID: 4800000, guid: 16bcaadf60a9741fc867e1c8bc0a3c39, type: 3}
+  particleAdditiveShader: {fileID: 4800000, guid: 8dd0912a71cfd494f9ebffa09be31839,
+    type: 3}
+  particleCutoutShader: {fileID: 4800000, guid: 590639dd7e995a54cb20290d9bfb13db,
+    type: 3}
+  particleFallbackShader: {fileID: 4800000, guid: a34c45d0625e9a14387774ca77000419,
+    type: 3}
+  particleAdditiveFallbackShader: {fileID: 4800000, guid: a903a6fadee0f5a4696bbfc4d6e20f11,
+    type: 3}
+  particleCutoutFallbackShader: {fileID: 4800000, guid: 26f318b90836ffa45a8d3207f7e02efe,
+    type: 3}
+--- !u!114 &114857442616819430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013925846234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c62fc572666486abc9880bccbb497e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensitivity: 10
